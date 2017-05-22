@@ -7,6 +7,7 @@ namespace nancy
   {
     public HomeModule()
     {
+      Get["/index"] = _ => View["index.cshtml"];
 
       Get["/"] = _ =>  {
         LetterVariables myLetterVariables = new LetterVariables();
